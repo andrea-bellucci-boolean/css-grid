@@ -56,3 +56,7 @@ nav ul li {
 .griglia > * {
   height: 200px;
 }
+
+.grid-column-span-2 {
+  grid-column-start: span 2;
+}
