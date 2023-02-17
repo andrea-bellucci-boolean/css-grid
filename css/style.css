@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-height: 100vh;
-    background-color: #EDF2F4;
+  min-height: 100vh;
+  background-color: #edf2f4;
 }
 
 header {
@@ -34,4 +34,25 @@ ul {
 nav ul li {
   display: inline-block;
   margin-left: 10px;
+}
+
+.container-griglia {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.griglia {
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+}
+
+.griglia > * {
+  height: 200px;
 }
